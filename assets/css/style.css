@@ -160,26 +160,62 @@ hr {
     background-image: linear-gradient(to right, #ccc, #777777, #ccc);
 }
 
-@media screen and (max-width: 980px) {
-    /* The body's bg color will be #333 */
-    body {
-      /* background-color: rgb(145, 39, 39); */
-      /* border: red 10px solid;   */
+@media only screen and (max-width: 980px) {
+    body{
+        width:100%;
     }
 }
 
-@media screen and (max-width: 768px) {
-    /* The body's bg color will be #333 */
-    body {
-      /* background-color: #333; */
-      /* border: black 10px solid; */
+@media only screen and (max-width: 768px) {
+
+    #main {
+        /* margin-top:10px; */
+        position: static;
+        border:none;
+        width:90%;
     }
 }
     
     @media screen and (max-width: 640px) {
-        /* The body's bg color will be #333 */
-     .header {
+
+     header {
          position: static;
+         display: block;
      }
+     .topnav {
+        position: static;
+        float:none;
+        width:100%;
+        font-size: 1.5em;  
+        /* background-color: black;   */
+    }
+    .myname {
+        width:100%; 
+        display: block;
+        float:none;
+        position: static;
+        width:100%;
+    }
+    #a_About,
+    #a_Portfolio,
+    #a_Contact  {
+        margin: 25px;
+}
+
+    #main {
+        position: static;
+        border:none;
+        width:90%;
+        padding-top: none;
+    }
+    #profilepic {
+        display: block;
+        float: none;
+        width:100%;
+        height: auto;
+    }
+    .content {
+        margin-bottom:0;
+    }
 
     }     
